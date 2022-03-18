@@ -1,6 +1,8 @@
 const tabButtons = document.querySelectorAll('.design-list__item');
 const tabDescriptions = document.querySelectorAll('.design__descr');
 const tabImages = document.querySelectorAll('.design-images');
+const featImages = document.querySelectorAll('.feature__img');
+const sectionDesignTitles = document.querySelectorAll('.design__title');
 const pageTitle = document.querySelector('title');
 
 const changeContent = (array, value) => {
@@ -18,6 +20,14 @@ tabButtons.forEach((tabButton, indexTab) => {
     const dataValue = tabButton.dataset.tabsHandler;
     changeContent(tabDescriptions, dataValue);
     changeContent(tabImages, dataValue);
+    changeContent(featImages, dataValue);
+    sectionDesignTitles.forEach((elementTitle, indexTitle) => {
+      if (indexTitle === indexTab) {
+        elementTitle.classList.remove('hidden');
+      } else {
+        elementTitle.classList.add('hidden');
+      }
+    })
     tabButtons.forEach((btn) => {
       if (btn == event.target) {
         btn.classList.add('design-list__item_active');
