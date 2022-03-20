@@ -1,13 +1,13 @@
 const burger = document.querySelector('.humburger-menu');
 const menu = document.querySelector('.menu');
-const menuLinks = menu.querySelectorAll('.menu-list__item')
+const menuLinks = menu.querySelectorAll('.menu-list__link')
 
 burger.addEventListener('click', () => {
-  menu.classList.toggle('menu-active');
+  menu.classList.add('menu-active');
 })
 
 menuLinks.forEach((link) => {
-  link.addEventListener('click', () => {
+  link.addEventListener('click', (event) => {
     menu.classList.remove('menu-active');
   });
 })
