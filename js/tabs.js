@@ -5,6 +5,8 @@ const featImages = document.querySelectorAll('.feature__img');
 const sectionDesignTitles = document.querySelectorAll('.design__title');
 const pageTitle = document.querySelector('title');
 
+pageTitle.textContent = tabButtons[0].textContent;
+
 const changeContent = (array, value) => {
   array.forEach((elem) => {
     if (elem.dataset.tabsField === value) {
