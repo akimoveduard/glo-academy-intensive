@@ -1,6 +1,6 @@
 # Учебный проект «Сайт-портфолио на JavaScript»
 
-### Одностраничный сайт, созданной во время интенсива, организованного [Glo Academy](https://glo-academy.org).
+### Одностраничный сайт, созданный во время интенсива, организованного [Glo Academy](https://glo-academy.org).
 
 **Ссылка на сайт на GitHub-Pages:** https://akimoveduard.github.io/glo-academy-intensive/
 
