@@ -23,5 +23,8 @@
 * Git
 * GitHub
 
+## Инструкция по установке
+`git clone https://github.com/akimoveduard/glo-academy-intensive.git`
+
 ## Статус проекта
 Проект закончен.
